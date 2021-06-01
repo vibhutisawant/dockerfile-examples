@@ -53,7 +53,7 @@ RUN apt-get remove -y \
 # Copy sh files and set permission
 COPY run.sh $IGNITE_HOME/
 # Grant permission to copy optional libs
-RUN chmod -R 777 ${IGNITE_HOME}/libs ${IGNITE_HOME}
+RUN chmod 777 ${IGNITE_HOME} ${IGNITE_HOME}/libs
 # Grant permission to execute entry point
 RUN chmod 555 $IGNITE_HOME/run.sh
 # Entry point
