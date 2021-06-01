@@ -36,8 +36,8 @@ RUN apt-get update &&  apt-get install -y \
         wget \
         tar \
         unzip && apt-get -y clean \
-# Download AdoptOpenJDK 8
- && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9_openj9-0.24.0/OpenJDK11U-jdk_s390x_linux_openj9_11.0.10_9_openj9-0.24.0.tar.gz \	 && tar xvf OpenJDK11U-jdk_s390x_linux_openj9_11.0.7_10_openj9-0.20.0.tar.gz \
+# Download AdoptOpenJDK 11
+ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9_openj9-0.24.0/OpenJDK11U-jdk_s390x_linux_openj9_11.0.10_9_openj9-0.24.0.tar.gz \
  && tar xvf OpenJDK11U-jdk_s390x_linux_openj9_11.0.10_9_openj9-0.24.0.tar.gz  \
 # Install Apache Ignite
  && wget https://archive.apache.org/dist/ignite/${IGNITE_VER}/apache-ignite-${IGNITE_VER}-bin.zip \
